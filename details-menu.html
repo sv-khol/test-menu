@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Details-menu</title>
+    <style>
+        nav {
+            padding: 10px;
+            background-color: cornflowerblue;
+            color: white;
+        }
+        nav details {
+            display: inline-block;
+            width: 20%;
+            vertical-align: top;
+            position: relative;
+        }
+        nav details .items {
+            position: absolute;
+            top: 40px;
+            width: 200px;
+            background-color: darkolivegreen;
+            padding: 5px;
+        }
+        ul {
+            list-style-type: disc;
+            list-style-position: inside;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <details open >
+            <summary>Point-1</summary>
+            <div class="items">
+                <p> first paragraph</p>
+                <p>All content and graphics on this web site are the property of the 
+                company Refsnes Data.</p>
+            </div>
+            
+        </details>
+        <details>
+            <summary>Point-2</summary>
+            <ul class="items">
+                <li>Second paragraph</li>
+                <li>All content and graphics on this web site</li>
+                <li>the property of the company Refsnes Data.</li>
+            </ul>
+        </details>
+    </nav>
+</body>
+</html>
