@@ -4,55 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>adaptive menu without js, css - checkbox!</title>
-	<style>
-		.wrapper {
-			max-width: 800px;
-			padding: 0 15px;
-			margin: 0 auto;
-		}
-		nav {
-			background-color: #ccc;
-			/*display: inline-block;*/
-			height: 50px;
-		}
-		.menu {
-			margin: 0;
-			padding: 0;
-		}
-		.menu li {
-			float: left;
-			margin: 0 10px;
-			list-style-type: none;
-		}
-		.menu li a {
-			display: inline-block;
-			padding: 10px 15px;
-		}
-		#menuCheck {
-			display: none;
-		}
-		.menuToggle {
-			padding: 10px 15px;
-			display: none;
-			cursor: pointer;
-		}
-		@media screen and (max-width: 600px ) {
-			.menu {
-				display: none;
-				position: absolute;
-				background-color: #ccc;
-			}
-			.menu li {
-				float: none;
-			}
-			.menuToggle {
-				display: inline-block;
-			}
-			#menuCheck:checked + .menu{
-				display: block;
-			}
-		}
-	</style>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<nav>
